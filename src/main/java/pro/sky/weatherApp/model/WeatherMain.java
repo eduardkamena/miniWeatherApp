@@ -2,6 +2,9 @@ package pro.sky.weatherApp.model;
 
 import java.math.BigDecimal;
 
+/**
+ * Модель данных, представляющая основные параметры погоды, такие как температура и влажность.
+ */
 public class WeatherMain {
 
     private BigDecimal temp;

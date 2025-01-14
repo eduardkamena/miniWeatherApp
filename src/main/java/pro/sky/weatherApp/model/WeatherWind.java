@@ -2,6 +2,9 @@ package pro.sky.weatherApp.model;
 
 import java.math.BigDecimal;
 
+/**
+ * Модель данных, представляющая параметры ветра, такие как скорость и направление.
+ */
 public class WeatherWind {
 
     private BigDecimal speed;
