@@ -1,5 +1,9 @@
 package pro.sky.weatherApp.model;
 
+/**
+ * Модель данных, представляющая информацию о погоде.
+ * Содержит основные данные о температуре, влажности и ветре.
+ */
 public class Weather {
 
     private WeatherMain main;

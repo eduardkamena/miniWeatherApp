@@ -13,6 +13,10 @@ import org.springframework.web.client.RestTemplate;
 import pro.sky.weatherApp.model.Weather;
 import pro.sky.weatherApp.service.WeatherService;
 
+/**
+ * Реализация сервиса {@link WeatherService} для работы в режиме "production".
+ * Использует внешний API для получения данных о погоде.
+ */
 @Service
 @Profile("production")
 public class WeatherServiceProduction implements WeatherService {
@@ -28,6 +32,12 @@ public class WeatherServiceProduction implements WeatherService {
     @Autowired
     private RestTemplate restTemplate;
 
+    /**
+     * Получает данные о погоде для указанного города, используя внешний API.
+     *
+     * @param city название города, для которого запрашивается погода.
+     * @return объект {@link Weather}, содержащий данные о погоде.
+     */
     @Override
     public Weather getWeather(String city) {
         logger.debug("Requesting weather for city {}", city);

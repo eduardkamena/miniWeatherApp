@@ -9,10 +9,20 @@ import pro.sky.weatherApp.service.WeatherService;
 
 import java.math.BigDecimal;
 
+/**
+ * Тестовая реализация сервиса {@link WeatherService} для использования в режимах, отличных от "production".
+ * Возвращает фиктивные данные о погоде.
+ */
 @Service
 @Profile("!production")
 public class WeatherServiceTest implements WeatherService {
 
+    /**
+     * Возвращает фиктивные данные о погоде для указанного города.
+     *
+     * @param city название города (не используется в тестовой реализации).
+     * @return объект {@link Weather} с тестовыми данными.
+     */
     @Override
     public Weather getWeather(String city) {
         Weather weather = new Weather();
@@ -26,4 +36,5 @@ public class WeatherServiceTest implements WeatherService {
         weather.setWind(weatherWind);
         return weather;
     }
+
 }
