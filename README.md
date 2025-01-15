@@ -1,8 +1,8 @@
-# WeatherApp
+# miniWeatherApp
 
 ## Описание
 
-**WeatherApp** — это простое веб-приложение, которое предоставляет информацию о погоде для указанного города. Приложение использует API сервиса [OpenWeatherMap](https://openweathermap.org/) для получения актуальных данных о погоде.
+**miniWeatherApp** — это простое веб-приложение, которое предоставляет информацию о погоде для указанного города. Приложение использует API сервиса [OpenWeatherMap](https://openweathermap.org/) для получения актуальных данных о погоде.
 
 ## Основные функции
 
@@ -31,8 +31,7 @@
 
 1. Склонируйте репозиторий:
     ```bash
-    git clone https://github.com/your-repo/weatherApp.git
-    cd weatherApp
+    git clone https://github.com/eduardkamena/miniWeatherApp.git
     ```
    
 2. Убедитесь, что у вас установлены:
@@ -65,7 +64,7 @@ GET /weather/Moscow
 ```
 Пример запроса через c URL:
 ```bash
-    curl -X GET "http://localhost:8080/weather/Moscow"
+curl -X GET "http://localhost:8080/weather/Moscow"
 ```
 Пример ответа:
 ```json
@@ -107,7 +106,7 @@ weather.api-key=your_api_key_here
 Для запуска в определенном профиле используйте флаг `-Dspring.profiles.active`:
 
 ```bash
-    mvn spring-boot:run -Dspring.profiles.active=test
+mvn spring-boot:run -Dspring.profiles.active=test
 ```
 
 ## Дополнительно
